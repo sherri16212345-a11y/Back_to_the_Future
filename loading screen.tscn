@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8adm4vlswxf2"]
+
+[ext_resource type="Texture2D" uid="uid://dutuhnvxbgxb8" path="res://images/back to the future bg.jpg" id="1_ae0b4"]
+[ext_resource type="Script" uid="uid://cvaxtdr71u4dp" path="res://scripts/back_to_the_future_bg.gd" id="2_swpkn"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BackToTheFutureBg" type="Sprite2D" parent="."]
+position = Vector2(580.99994, 334)
+scale = Vector2(0.30677083, 0.30648142)
+texture = ExtResource("1_ae0b4")
+script = ExtResource("2_swpkn")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Back to the Future"
