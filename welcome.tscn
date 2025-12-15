@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://30jmkr5uhgwe"]
+
+[ext_resource type="Texture2D" uid="uid://d1wdd0ckdx0pn" path="res://images/Very_Black_screen.jpg" id="1_hp420"]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -160.0
+offset_top = -68.0
+offset_right = 2400.0
+offset_bottom = 1852.0
+texture = ExtResource("1_hp420")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 388.0
+offset_top = 266.0
+offset_right = 808.0
+offset_bottom = 581.0
+theme_override_font_sizes/font_size = 75
+text = "Welcome!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 270.0
+offset_top = 264.0
+offset_right = 1082.0
+offset_bottom = 455.0
+theme_override_font_sizes/font_size = 75
+text = "Let's go upstairs!"
