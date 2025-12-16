@@ -11,14 +11,6 @@ offset_right = 2400.0
 offset_bottom = 1852.0
 texture = ExtResource("1_hp420")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 388.0
-offset_top = 266.0
-offset_right = 808.0
-offset_bottom = 581.0
-theme_override_font_sizes/font_size = 75
-text = "Welcome!"
-
 [node name="Label2" type="Label" parent="."]
 offset_left = 270.0
 offset_top = 264.0
@@ -26,3 +18,9 @@ offset_right = 1082.0
 offset_bottom = 455.0
 theme_override_font_sizes/font_size = 75
 text = "Let's go upstairs!"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
