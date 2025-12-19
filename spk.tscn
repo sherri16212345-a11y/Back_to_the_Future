@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcev6rwbb54o6"]
+
+[ext_resource type="Texture2D" uid="uid://dsbagx6y8kepb" path="res://images/Spk-removebg-preview.png" id="1_268hq"]
+
+[sub_resource type="GDScript" id="GDScript_p2q2l"]
+resource_name = "spk"
+script/source = "extends Node
+
+@export var value: int = 1
+
+func _on_area_2d_body_entered(body):
+	print(\"spk\")
+	if body is CharacterBody2D:
+		FtcGameControls.on_event_spk_collected(value)
+		self.queue_free()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_06s53"]
+size = Vector2(158, 149.75)
+
+[node name="spk" type="Node2D"]
+script = SubResource("GDScript_p2q2l")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(109, 170.125)
+shape = SubResource("RectangleShape2D_06s53")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(99.25, 154)
+scale = Vector2(0.5239808, 0.48494983)
+texture = ExtResource("1_268hq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
