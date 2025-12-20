@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://drm6oetofq2qx"]
+
+[ext_resource type="Texture2D" uid="uid://dutuhnvxbgxb8" path="res://images/back to the future bg.jpg" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://dara8a18p2sto" path="res://main_menu.gd" id="1_fu7sn"]
+[ext_resource type="Theme" uid="uid://dx6414f43x1p1" path="res://themes/default.tres" id="2_7vrkn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_fu7sn")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(576.25006, 327.50003)
+scale = Vector2(0.30195314, 0.30787036)
+texture = ExtResource("1_06t4h")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="innerbg" type="PanelContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7vrkn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/innerbg"]
+layout_mode = 2
+
+[node name="ButtonContainer" type="MarginContainer" parent="Control/MarginContainer/innerbg/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Button" type="Button" parent="Control/MarginContainer/innerbg/VBoxContainer/ButtonContainer"]
+layout_mode = 2
+theme = ExtResource("2_7vrkn")
+theme_type_variation = &"CustonMainMenuButton"
+text = "New Game"
+
+[connection signal="pressed" from="Control/MarginContainer/innerbg/VBoxContainer/ButtonContainer/Button" to="." method="on_new_game_pressed"]
