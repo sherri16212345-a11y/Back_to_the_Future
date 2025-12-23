@@ -21,9 +21,18 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 EventControls="*res://scripts/event controls.gd"
 FtcGameControls="*res://scripts/ftc_gamecontrols.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+
+[gui]
+
+theme/custom="uid://ddk8pdxcxi32d"
 
 [input]
 
