@@ -7,13 +7,14 @@ const COMMAND_LABEL = "press space"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	ui.visible = false
-	EventControls.interactible.connect(on_interactible) # Replace with function body.
+	EventControls.connect("interactible", on_interactible)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func on_interactible(node: Node, label: String ) -> void:
+func on_interactible(node: Node, label: String) -> void:
 	if node != null:
 		ui.visible = true
 		prompt.text = COMMAND_LABEL +label
+		print("im so bored")
 	else:
 		ui.visible = false
