@@ -18,3 +18,7 @@ func on_interactible(node: Node, label: String) -> void:
 		print("im so bored")
 	else:
 		ui.visible = false
+
+
+func on_continue_pressed() -> void:
+	pass # Replace with function body.
