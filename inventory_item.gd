@@ -1,4 +1,4 @@
-@tool
+#@tool
 
 extends Node2D
 
@@ -9,8 +9,10 @@ extends Node2D
 @onready var icon: Sprite2D = $Sprite2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	print("ready")
 	if not Engine.is_editor_hint():
 		EventControls.interaction.connect(on_interaction)
+		print("interaction connected")
 		icon.texture = item_texture # Replace with function body.
 
 
@@ -20,6 +22,7 @@ func _process(_delta: float):
 		icon.texture = item_texture
 		
 func on_interaction(node: Node):
+	print("help???")
 	if node == self:
 		var item: Dictionary = {
 			"quantity": 1,
@@ -30,3 +33,4 @@ func on_interaction(node: Node):
 
 		EventControls.emit_signal("item_picked_up", item)
 		self.queue_free()
+		print("...")
