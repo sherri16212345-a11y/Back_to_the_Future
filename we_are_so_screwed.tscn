@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfijw5qpei0d3"]
+
+[ext_resource type="Script" uid="uid://cme8rsnk02yxi" path="res://scripts/we_are_so_screwed.gd" id="1_l2ms2"]
+[ext_resource type="Texture2D" uid="uid://d1wdd0ckdx0pn" path="res://images/Very_Black_screen.jpg" id="2_8yfw2"]
+
+[node name="we are so screwed" type="Node2D"]
+script = ExtResource("1_l2ms2")
+
+[node name="VeryBlackScreen" type="Sprite2D" parent="."]
+position = Vector2(1092, 785)
+texture = ExtResource("2_8yfw2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.5
+offset_top = -11.5
+offset_right = 226.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "The task file got corrupted?? What do we do??????"
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 1714.0
+offset_top = 938.0
+offset_right = 1778.0
+offset_bottom = 978.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Control/PanelContainer"]
+layout_mode = 2
+text = "Next ->"
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -780.0
+offset_top = -34.5
+offset_right = 780.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "We aren't alone, are we? What if we found some other cards?"
+
+[node name="Control" type="Control" parent="CanvasLayer2/Label"]
+anchors_preset = 0
+offset_left = 1526.0
+offset_top = 428.5
+offset_right = 1566.0
+offset_bottom = 468.5
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer2/Label/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="CanvasLayer2/Label/Control/PanelContainer"]
+layout_mode = 2
+text = "Find help ->"
+
+[connection signal="pressed" from="CanvasLayer/Control/PanelContainer/Button" to="." method="on_next_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Label/Control/PanelContainer/Button" to="." method="on_find_help_pressed"]
