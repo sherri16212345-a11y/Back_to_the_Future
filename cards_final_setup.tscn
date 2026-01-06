@@ -1,0 +1,388 @@
+[gd_scene load_steps=6 format=3 uid="uid://q1kuxywpujxf"]
+
+[ext_resource type="PackedScene" uid="uid://bkp70e0q6lmns" path="res://scenes/inventoryslot.tscn" id="1_0mvip"]
+[ext_resource type="PackedScene" uid="uid://bnaa1jnsi75iy" path="res://scenes/cards/ocean_ui.tscn" id="2_7dhyy"]
+[ext_resource type="PackedScene" uid="uid://b7716synh0vd" path="res://scenes/cards/20_of_clubs.tscn" id="3_medro"]
+[ext_resource type="PackedScene" uid="uid://d3vok3m3grcbe" path="res://scenes/cards/sunset_ui.tscn" id="4_7dhyy"]
+[ext_resource type="PackedScene" uid="uid://dr08syn7cvmox" path="res://scenes/cards/orb_ui.tscn" id="5_medro"]
+
+[node name="cards final setup" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="labels" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 130.0
+offset_right = 278.0
+offset_bottom = 199.0
+theme_override_font_sizes/font_size = 50
+text = "Ocean"
+
+[node name="Label2" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 404.0
+offset_right = 285.0
+offset_bottom = 473.0
+theme_override_font_sizes/font_size = 50
+text = "sunset"
+
+[node name="Label3" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 1170.0
+offset_right = 513.0
+offset_bottom = 1239.0
+theme_override_font_sizes/font_size = 50
+text = "cloud + planet"
+
+[node name="Label4" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 126.0
+offset_right = 765.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 50
+text = "ace of hearts"
+
+[node name="Label5" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 408.0
+offset_right = 763.0
+offset_bottom = 477.0
+theme_override_font_sizes/font_size = 50
+text = "ace of clubs"
+
+[node name="Label6" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 1016.0
+offset_right = 523.0
+offset_bottom = 1085.0
+theme_override_font_sizes/font_size = 50
+text = "20 of clubs"
+
+[node name="Label7" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 1212.0
+offset_top = 1158.0
+offset_right = 1831.0
+offset_bottom = 1227.0
+theme_override_font_sizes/font_size = 50
+text = "\"you are what I dream of\""
+
+[node name="Label8" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 802.0
+offset_top = 120.0
+offset_right = 1421.0
+offset_bottom = 189.0
+theme_override_font_sizes/font_size = 50
+text = "Queen of diamonds"
+
+[node name="Label9" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 396.0
+offset_right = 1419.0
+offset_bottom = 465.0
+theme_override_font_sizes/font_size = 50
+text = "jack of diamonds"
+
+[node name="Label10" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 1338.0
+offset_top = 390.0
+offset_right = 1957.0
+offset_bottom = 459.0
+theme_override_font_sizes/font_size = 50
+text = "4 of clubs"
+
+[node name="Label11" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 652.0
+offset_right = 1093.0
+offset_bottom = 721.0
+theme_override_font_sizes/font_size = 50
+text = "10 of diamonds"
+
+[node name="Label12" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 666.0
+offset_right = 775.0
+offset_bottom = 735.0
+theme_override_font_sizes/font_size = 50
+text = "Graph "
+
+[node name="Label13" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 922.0
+offset_top = 646.0
+offset_right = 1541.0
+offset_bottom = 715.0
+theme_override_font_sizes/font_size = 50
+text = "6 of hearts"
+
+[node name="Label14" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 1276.0
+offset_top = 646.0
+offset_right = 1895.0
+offset_bottom = 715.0
+theme_override_font_sizes/font_size = 50
+text = "3 of clubs"
+
+[node name="Label15" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 844.0
+offset_right = 1139.0
+offset_bottom = 913.0
+theme_override_font_sizes/font_size = 50
+text = "2 of hearts"
+
+[node name="Label16" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 1648.0
+offset_top = 394.0
+offset_right = 2348.0
+offset_bottom = 463.0
+theme_override_font_sizes/font_size = 50
+text = "(mildly distorted)10 of hearts"
+
+[node name="Label17" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 2428.0
+offset_top = 390.0
+offset_right = 3128.0
+offset_bottom = 459.0
+theme_override_font_sizes/font_size = 50
+text = "6 of spades"
+
+[node name="Label18" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 1372.0
+offset_top = 108.0
+offset_right = 2072.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 50
+text = "Ace of spades (kind of...)"
+
+[node name="Label19" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 856.0
+offset_right = 866.0
+offset_bottom = 925.0
+theme_override_font_sizes/font_size = 50
+text = "sad :("
+
+[node name="Label20" type="Label" parent="labels"]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 1015.0
+offset_right = 1325.0
+offset_bottom = 1156.0
+theme_override_font_sizes/font_size = 50
+text = "colors
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.9365188, 1.3167092)
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+columns = 10
+
+[node name="invslot" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot2" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot3" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot4" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot5" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot6" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot7" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot8" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot9" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot10" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot11" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot12" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot13" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot14" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot15" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot16" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot17" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot18" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot19" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot20" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot21" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot22" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot23" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot24" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot25" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot26" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot27" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot28" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot29" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot30" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot31" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot32" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot33" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot34" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot35" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot36" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot37" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot38" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot39" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="invslot40" parent="MarginContainer/PanelContainer/GridContainer" instance=ExtResource("1_0mvip")]
+layout_mode = 2
+
+[node name="ocean ui" parent="." instance=ExtResource("2_7dhyy")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 2036.0
+offset_bottom = 812.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.5100093, 0.5181258)
+
+[node name="20 of clubs" parent="." instance=ExtResource("3_medro")]
+layout_mode = 1
+offset_left = 192.0
+offset_top = 7.0
+offset_right = 192.0
+offset_bottom = 7.0
+scale = Vector2(0.6529513, 0.67635757)
+
+[node name="PanelContainer2" type="PanelContainer" parent="20 of clubs"]
+layout_mode = 0
+offset_left = 12.252063
+offset_top = 60.618824
+offset_right = 265.25208
+offset_bottom = 273.61884
+
+[node name="Label" type="Label" parent="20 of clubs/PanelContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Sorry, 
+cannot be 
+moved :("
+
+[node name="sunset ui" parent="." instance=ExtResource("4_7dhyy")]
+layout_mode = 1
+offset_left = -3.0
+offset_top = 265.0
+offset_right = -3.0
+offset_bottom = 265.0
+scale = Vector2(1.5693551, 1.6348716)
+
+[node name="orb ui" parent="." instance=ExtResource("5_medro")]
+layout_mode = 1
+offset_left = 0.9999981
+offset_top = 539.0
+offset_right = 1.0
+offset_bottom = 539.0
+scale = Vector2(1.508595, 1.5793879)
